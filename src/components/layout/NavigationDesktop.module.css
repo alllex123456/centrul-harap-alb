@@ -1,0 +1,22 @@
+.nav {
+  font-size: 1.8rem;
+}
+
+.list {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.item {
+  border-bottom: 1px solid var(--color-secondary-light);
+  transition: var(--transition);
+}
+
+.item:hover {
+  filter: brightness(120%);
+}
+
+.active {
+  border-bottom: 2px solid var(--color-secondary-light);
+}

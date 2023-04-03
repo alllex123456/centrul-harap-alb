@@ -1,0 +1,24 @@
+.button {
+  font: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.primary {
+  color: var(--color-text-dark);
+  background-color: var(--color-secondary-main);
+}
+.primary:hover {
+  background-color: var(--color-secondary-dark);
+}

@@ -1,0 +1,18 @@
+.hero {
+  margin: 5rem 0;
+  padding: 5rem 0;
+  background: url('../../assets/hero.jpg'),
+    linear-gradient(rgba(50, 0, 0, 0.8), rgba(50, 0, 0, 0.8));
+  background-blend-mode: multiply;
+}
+
+.content {
+  padding: 2rem 0;
+  margin: var(--page-margin);
+  max-width: var(--page-max-width);
+}
+
+.display {
+  font-family: var(--font-display);
+  font-size: 6rem;
+}
