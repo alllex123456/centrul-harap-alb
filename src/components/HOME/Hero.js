@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import Card from '../common/Card';
+import Button from '../common/Button';
 
 import foto1 from '../../assets/activitati/poze - SET I/1679338707312.jpg';
-
 import styles from './Hero.module.css';
 
 const Hero = () => {
@@ -34,6 +34,7 @@ const Hero = () => {
                 sarcinilor instructiv-educative din activitatile in care este
                 integrat.
               </p>
+              <Button primary>CUM NE POȚI GĂSI</Button>
             </div>
             <div className={styles.images}>
               <img src={foto1} alt="" />

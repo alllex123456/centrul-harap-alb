@@ -86,10 +86,6 @@ button {
   cursor: pointer;
 }
 
-hr {
-  margin: 2rem 0;
-}
-
 /* HELPERS */
 .accent {
   color: var(--color-secondary-light);

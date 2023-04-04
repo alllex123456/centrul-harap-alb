@@ -18,6 +18,7 @@
   gap: 2rem;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .container > * {
@@ -29,6 +30,12 @@
   height: 54rem;
   margin-left: auto;
   border-radius: var(--border-radius);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .introduction {
