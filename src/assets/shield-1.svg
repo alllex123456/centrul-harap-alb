@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd ">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0" x="0" viewBox="-53 -53 106 116 ">
+  <title>['pean ']</title>
+  <desc>This is an SVG of a blazon, a heraldic description of a shield.  It was generated with pyBlazon, by Mark Shoulson and Arnt Richard Johansen</desc>
+  <mask id="Clip0001">
+    <g fill="white">
+      <path d="M -50 -50 V-14 C-50,46 0,60 0,60 C0,60 50,46 50,-14 V-50 z" id="ClipPath0002"/>
+    </g>
+  </mask>
+  <path stroke="black" stroke-width="1" d="M -50 -50 V-14 C-50,46 0,60 0,60 C0,60 50,46 50,-14 V-50 z" fill="none"/>
+  <defs>
+    <pattern width="15" patternContentUnits="userSpaceOnUse" patternUnits="userSpaceOnUse" id="ermine0003" height="15">
+      <rect y="0" width="15" fill="#181818" x="0" height="15"/>
+      <path d="M1,5 c1,-1 1.5,-4 1.5,-4 c0,0 .5,3 1.5,4 l-1.5,1.5 z" fill="yellow"/>
+      <circle cx="1.5" cy="2" r=".5" fill="yellow"/>
+      <circle cx="2.5" cy="1" r=".5" fill="yellow"/>
+      <circle cx="3.5" cy="2" r=".5" fill="yellow"/>
+      <path d="M8.5,12.5 c1,-1 1.5,-4 1.5,-4 c0,0 .5,3 1.5,4 l-1.5,1.5 z" fill="yellow"/>
+      <circle cx="9" cy="9.5" r=".5" fill="yellow"/>
+      <circle cx="10" cy="8.5" r=".5" fill="yellow"/>
+      <circle cx="11" cy="9.5" r=".5" fill="yellow"/>
+    </pattern>
+  </defs>
+  <g mask="url(#Clip0001)" transform="">
+    <rect y="-50" width="100" fill="url(#ermine0003)" x="-50" height="110"/>
+  </g>
+</svg>

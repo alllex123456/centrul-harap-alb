@@ -10,9 +10,49 @@
   padding: 2rem 0;
   margin: var(--page-margin);
   max-width: var(--page-max-width);
+  color: var(--color-text-light);
 }
 
-.display {
-  font-family: var(--font-display);
-  font-size: 6rem;
+.container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container > * {
+  flex: 1 1 40rem;
+}
+
+.images img {
+  display: block;
+  height: 54rem;
+  margin-left: auto;
+  border-radius: var(--border-radius);
+}
+
+.introduction {
+  line-height: 1.8;
+  font-style: oblique;
+  font-size: 1.8rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+  color: var(--color-secondary-main);
+}
+
+@media (max-width: 1000px) {
+  .container {
+    text-align: center;
+  }
+  .images img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .images img {
+    height: 30rem;
+  }
 }

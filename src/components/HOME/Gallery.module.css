@@ -1,0 +1,4 @@
+.gallery {
+  max-width: var(--page-max-width);
+  margin: var(--page-margin);
+}
