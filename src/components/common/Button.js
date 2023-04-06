@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './Button.module.css';
 
@@ -8,6 +9,14 @@ const Button = (props) => {
     : props.secondary
     ? styles.secondary
     : styles.text;
+
+  if (props.to) {
+    return (
+      <Link to={props.to} className={`${styles.button} ${variant}`}>
+        {props.children}
+      </Link>
+    );
+  }
 
   return (
     <button

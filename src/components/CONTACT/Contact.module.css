@@ -1,0 +1,48 @@
+.content {
+  padding: 6rem 16rem;
+  margin: var(--page-margin);
+  max-width: var(--page-max-width);
+  color: var(--color-text-dark);
+  background: url('../../assets/old-paper.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  gap: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.group {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.subgroup {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.textarea {
+  display: flex;
+  gap: 2rem;
+}
+
+.textarea textarea {
+  flex: 1;
+}
+
+.actions {
+  text-align: right;
+}
+
+.data {
+  margin-left: auto;
+}

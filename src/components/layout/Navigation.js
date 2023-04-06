@@ -4,16 +4,9 @@ import { Crown, X } from 'phosphor-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import Button from '../common/Button';
+import { navigationItems } from '../../store/navigation-items';
 
 import styles from './Navigation.module.css';
-
-const items = [
-  { label: 'Acasă', icon: '', route: '/' },
-  { label: 'Activități', icon: '', route: '/activitati' },
-  { label: 'Colaboratori', icon: '', route: '/colaboratori' },
-  { label: 'Imagini', icon: '', route: '/imagini' },
-  { label: 'Contact', icon: '', route: '/contact' },
-];
 
 const Navigation = (props) => {
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -22,10 +15,10 @@ const Navigation = (props) => {
     return (
       <nav className={styles.nav}>
         <ul className={styles.list}>
-          {items.map((item, index, array) => {
+          {navigationItems.map((item, index, array) => {
             if (index === array.length - 1)
               return (
-                <Button primary key={index}>
+                <Button primary to={item.route} key={index}>
                   {item.label}
                 </Button>
               );
@@ -34,6 +27,7 @@ const Navigation = (props) => {
                 <NavLink
                   className={({ isActive }) => (isActive ? styles.active : '')}
                   to={item.route}
+                  target={item.target}
                 >
                   {item.label}
                 </NavLink>
@@ -68,7 +62,7 @@ const Navigation = (props) => {
                 onClick={() => setShowMobileNav(!showMobileNav)}
               />
               <ul className={styles['mobile-list']}>
-                {items.map((item, index, array) => {
+                {navigationItems.map((item, index, array) => {
                   if (index === array.length - 1)
                     return (
                       <Button primary key={index}>

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import ImageGallery from 'react-image-gallery';
 
 import foto1 from '../../assets/activitati/poze - SET I/1679338707312.jpg';
-import foto2 from '../../assets/activitati/poze - SET I/1679338707339.jpg';
+import foto2 from '../../assets/activitati/poze - SET I/1679338707482.jpg';
 import foto3 from '../../assets/activitati/poze - SET I/1679338707397.jpg';
 import foto4 from '../../assets/activitati/poze - SET I/1679338707426.jpg';
 import foto5 from '../../assets/activitati/poze - SET I/1679338707804.jpg';
@@ -19,47 +19,47 @@ const Gallery = () => {
     {
       original: foto1,
       thumbnail: foto1,
-      originalHeight: 700,
+      originalHeight: 900,
     },
     {
       original: foto2,
       thumbnail: foto3,
-      originalHeight: 700,
+      originalHeight: 900,
     },
     {
       original: foto3,
       thumbnail: foto3,
-      originalHeight: 700,
+      originalHeight: 900,
     },
     {
       original: foto4,
       thumbnail: foto4,
-      originalHeight: 700,
+      originalHeight: 900,
     },
     {
       original: foto5,
       thumbnail: foto5,
-      originalHeight: 700,
+      originalHeight: 900,
     },
     {
       original: foto6,
       thumbnail: foto6,
-      originalHeight: 700,
+      originalHeight: 900,
     },
     {
       original: foto7,
       thumbnail: foto7,
-      originalHeight: 700,
+      originalHeight: 900,
     },
     {
       original: foto8,
       thumbnail: foto8,
-      originalHeight: 700,
+      originalHeight: 900,
     },
     {
       original: foto9,
       thumbnail: foto9,
-      originalHeight: 700,
+      originalHeight: 900,
     },
   ];
 
@@ -72,7 +72,7 @@ const Gallery = () => {
       className={styles.gallery}
     >
       <h2 className="section-header">
-        <span className="monsieur">A</span>ctivități în imagini
+        <span className="display">A</span>ctivități în imagini
       </h2>
       <ImageGallery items={images} lazyLoad={true} />
     </motion.div>

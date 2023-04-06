@@ -3,8 +3,10 @@
   font-weight: 700;
   padding: 1rem 2rem;
   border-radius: var(--border-radius);
-  font-size: 1.8rem;
+  font-size: var(--size-text-md);
   transition: var(--transition);
+  box-shadow: 0 0 1rem rgba(50, 0, 0, 0.1);
+  width: fit-content;
 }
 
 .button:hover {

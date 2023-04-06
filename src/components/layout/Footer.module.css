@@ -1,0 +1,31 @@
+.footer {
+  background: var(--color-secondary-main);
+  color: var(--color-text-dark);
+  padding: 2rem 0;
+  min-height: 20rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.footer > * {
+  flex: 0 1 20rem;
+  text-align: center;
+}
+
+.list-internal-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.list-internal-links li:hover {
+  border-bottom: 2px solid var(--color-primary-main);
+}
+
+@media (max-width: 32em) {
+  .list-internal-links {
+    flex-direction: column;
+  }
+}

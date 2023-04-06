@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import Card from '../common/Card';
+import PageTop from '../common/PageTop';
 import Button from '../common/Button';
 
 import foto1 from '../../assets/activitati/poze - SET I/1679338707312.jpg';
@@ -14,18 +14,21 @@ const Hero = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
-      className={styles.hero}
     >
-      <div className={styles.content}>
-        <Card>
+      <PageTop>
+        <div className={styles.content}>
           <div className={styles.container}>
             <div className={styles.text}>
               <h1 className={styles.title}>
-                <span className="monsieur">C</span>entrul educațional HARAP ALB
+                <span className="display">C</span>entrul educațional HARAP ALB
               </h1>
               <p className={styles.introduction}>
                 <span className="accent">Misiune</span>: formarea unei
-                personalități creatoare, cu atitudine de ZIDITOR.{' '}
+                personalități creatoare, cu atitudine de ZIDITOR.
+              </p>
+              <p className={styles.introduction}>
+                <span className="accent">Obiectiv</span>: crearea și
+                fundamentarea unui concept nou în EDUCATIE
               </p>
               <hr />
               <p>
@@ -40,8 +43,8 @@ const Hero = () => {
               <img src={foto1} alt="" />
             </div>
           </div>
-        </Card>
-      </div>
+        </div>
+      </PageTop>
     </motion.div>
   );
 };

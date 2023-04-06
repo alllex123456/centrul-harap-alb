@@ -1,8 +1,0 @@
-.card {
-  padding: 4rem;
-  border-radius: var(--border-radius);
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  background: rgba(60, 60, 50, 0.8);
-  /* border: 2px solid var(--color-secondary-dark); */
-  /* box-shadow: 0 0 2rem 2rem rgba(50, 0, 0, 0.5); */
-}

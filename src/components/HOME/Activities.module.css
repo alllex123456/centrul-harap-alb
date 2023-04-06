@@ -1,0 +1,104 @@
+.activities {
+  padding: 5rem 0;
+  background: url('../../assets/flourish-frame-1.svg'),
+    var(--section-background-gradient);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.content {
+  margin: var(--page-margin);
+  max-width: var(--page-max-width);
+}
+
+.paper {
+  padding: 14rem;
+  background-image: url('../../assets/card-background.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-text-dark);
+}
+
+.container {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.container > * {
+  flex: 1 1 30rem;
+}
+
+.container div {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.container:nth-child(2) {
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 6rem;
+  flex-wrap: wrap;
+}
+
+.container:nth-child(2) > * {
+  flex: 1 1 30rem;
+}
+
+.container:nth-child(2) img {
+  height: 30rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.container:nth-child(2) div:nth-child(2) {
+  text-align: center;
+}
+
+.sword {
+  height: 10rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list p {
+  font-size: var(--size-text-xl);
+  margin-bottom: 2rem;
+}
+.list li {
+  font-size: var(--size-text-lg);
+}
+
+@media (max-width: 43.75em) {
+  .container div {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 68.75em) {
+  .container div {
+    margin: 0;
+  }
+}
+
+@media (max-width: 32em) {
+  .content {
+    padding: 8rem 0;
+  }
+
+  .container:nth-child(2) {
+    gap: 2rem;
+  }
+}
