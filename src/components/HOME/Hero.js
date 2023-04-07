@@ -40,7 +40,14 @@ const Hero = () => {
               <Button primary>CUM NE POȚI GĂSI</Button>
             </div>
             <div className={styles.images}>
-              <img src={foto1} alt="" />
+              <motion.img
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1 }}
+                src={foto1}
+                alt=""
+              />
             </div>
           </div>
         </div>

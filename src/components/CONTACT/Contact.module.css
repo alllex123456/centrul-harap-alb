@@ -9,40 +9,75 @@
   background-position: center;
 
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .group {
+  position: relative;
   display: flex;
   gap: 2rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .subgroup {
+  position: relative;
   display: flex;
   gap: 2rem;
   align-items: center;
 }
 
-.textarea {
+.subgroup > div {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.textarea textarea {
-  flex: 1;
+.subgroup label,
+.textarea label {
+  margin-right: 1rem;
+  margin-bottom: 5px;
+}
+
+.textarea {
+  position: relative;
+}
+
+.textarea > div {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .actions {
   text-align: right;
 }
 
-.data {
-  margin-left: auto;
+.error {
+  position: absolute;
+  right: 0;
+  bottom: -2rem;
+  color: red;
+  font-weight: 700;
+  text-align: right;
+  font-size: var(--size-text-xs);
+}
+
+@media (max-width: 37.5em) {
+  .content {
+    padding: 6rem 10rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .content {
+    padding: 6rem 2rem;
+  }
 }

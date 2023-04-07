@@ -22,6 +22,7 @@ const Button = (props) => {
     <button
       className={`${styles.button} ${variant}`}
       type={props.type || 'text'}
+      disabled={props.disabled}
     >
       {props.children}
     </button>

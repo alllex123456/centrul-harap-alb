@@ -1,0 +1,9 @@
+.camps {
+  padding: 5rem 0;
+  max-width: var(--page-max-width);
+  margin: var(--page-margin);
+}
+
+.images img {
+  height: 38rem;
+}
