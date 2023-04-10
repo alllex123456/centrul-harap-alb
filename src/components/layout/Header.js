@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 import Navigation from './Navigation';
 
+import logo from '../../assets/logo/hp-auriu.png';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -23,7 +24,7 @@ const Header = () => {
       transition={{ duration: 1 }}
       className={styles.header}
     >
-      {windowWidth > 1000 && <h1>LOGO</h1>}
+      {windowWidth > 1000 && <img className={styles.logo} src={logo} />}
       <Navigation windowWidth={windowWidth} />
     </motion.header>
   );

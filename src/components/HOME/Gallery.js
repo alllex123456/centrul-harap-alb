@@ -74,7 +74,14 @@ const Gallery = () => {
       <h2 className="section-header">
         <span className="display">A</span>ctivități în imagini
       </h2>
-      <ImageGallery items={images} lazyLoad={true} />
+      <ImageGallery
+        items={images}
+        lazyLoad={true}
+        showThumbnails={false}
+        showFullscreenButton={false}
+        showPlayButton={false}
+        autoPlay={true}
+      />
     </motion.div>
   );
 };

@@ -12,7 +12,11 @@ const Button = (props) => {
 
   if (props.to) {
     return (
-      <Link to={props.to} className={`${styles.button} ${variant}`}>
+      <Link
+        to={props.to}
+        className={`${props.className} ${styles.button} ${variant}`}
+        onClick={props.onClick}
+      >
         {props.children}
       </Link>
     );
@@ -20,9 +24,10 @@ const Button = (props) => {
 
   return (
     <button
-      className={`${styles.button} ${variant}`}
+      className={`${props.className} ${styles.button} ${variant}`}
       type={props.type || 'text'}
       disabled={props.disabled}
+      onClick={props.onClick}
     >
       {props.children}
     </button>

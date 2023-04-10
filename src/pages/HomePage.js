@@ -3,14 +3,17 @@ import Hero from '../components/HOME/Hero';
 import Gallery from '../components/HOME/Gallery';
 import Activities from '../components/HOME/Activities';
 import Camps from '../components/HOME/Camps';
+import Mission from '../components/HOME/Mission';
+import Collaborators from '../components/HOME/Collaborators';
 
 const Home = () => {
   return (
     <React.Fragment>
       <Hero />
-      <Gallery />
+      <Mission />
       <Activities />
-      <Camps />
+      <Gallery />
+      <Collaborators />
     </React.Fragment>
   );
 };

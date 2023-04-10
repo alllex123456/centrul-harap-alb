@@ -23,8 +23,21 @@
   text-align: center;
 }
 
-.images img {
+.images {
+  position: relative;
   height: 54rem;
+}
+
+.images img:first-child {
+  position: absolute;
+  height: 120%;
+  width: 120%;
+  top: -5rem;
+  left: -5rem;
+}
+
+.images img:nth-child(2) {
+  height: 100%;
   border-radius: var(--border-radius);
 }
 
