@@ -1,3 +1,7 @@
+.hero {
+  margin-top: 2rem;
+}
+
 .content {
   padding: 8rem 10rem;
   margin: var(--page-margin);
@@ -7,66 +11,4 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.container {
-  color: var(--color-text-dark);
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.container > * {
-  flex: 1 1 30rem;
-  text-align: center;
-}
-
-.images {
-  position: relative;
-  height: 54rem;
-}
-
-.images img:first-child {
-  position: absolute;
-  height: 120%;
-  width: 120%;
-  top: -5rem;
-  left: -5rem;
-}
-
-.images img:nth-child(2) {
-  height: 100%;
-  border-radius: var(--border-radius);
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  align-items: center;
-}
-
-.introduction {
-  line-height: 1.8;
-  font-style: oblique;
-  font-size: var(--size-text-lg);
-}
-
-.title {
-  margin-bottom: 2rem;
-  color: var(--color-primary-light);
-}
-
-@media (max-width: 37.5em) {
-  .images img {
-    height: 30rem;
-  }
-}
-
-@media (max-width: 32em) {
-  .content {
-    padding: 8rem 2rem;
-  }
 }

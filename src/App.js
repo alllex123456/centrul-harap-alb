@@ -4,7 +4,6 @@ import { AnimatePresence } from 'framer-motion';
 
 const Layout = React.lazy(() => import('./components/layout/Layout'));
 const Home = React.lazy(() => import('./pages/HomePage'));
-const Contact = React.lazy(() => import('./pages/ContactPage'));
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
           </Routes>
         </AnimatePresence>
       </Layout>

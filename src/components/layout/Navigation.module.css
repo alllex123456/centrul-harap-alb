@@ -35,6 +35,13 @@
   right: 2rem;
 }
 
+.logo {
+  height: 4.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
 .mobile-nav {
   position: absolute;
   top: 0;

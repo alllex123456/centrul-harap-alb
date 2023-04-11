@@ -1,28 +1,29 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import Button from '../common/Button';
-
+import SectionHeader from '../common/SectionHeader';
 import foto1 from '../../assets/activitati/poze - SET I/1679339449434.jpg';
 import foto2 from '../../assets/activitati/poze - SET I/1679338843975.jpg';
 import foto3 from '../../assets/activitati/poze - SET I/1679338708435.jpg';
+import frame from '../../assets/flourish-frame-2.svg';
 
 import styles from './Activities.module.css';
-import frame from '../../assets/flourish-frame-2.svg';
 
 const Activities = () => {
   return (
     <motion.div
+      id="activitati"
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      whileInView={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 2 }}
+      viewport={{ once: true }}
       className={styles.activities}
     >
-      <h2 className="section-header">
+      <SectionHeader>
         <span className="display">A</span>ctivitați ale Centrului Educațional
         Harap Alb
-      </h2>
+      </SectionHeader>
       <div className={styles.content}>
         <div className={styles.zigzag}>
           <p>

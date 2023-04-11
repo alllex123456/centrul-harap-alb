@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Crown, X } from 'phosphor-react';
+import { List, X } from 'phosphor-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import Button from '../common/Button';
 import { navigationItems } from '../../store/navigation-items';
 
+import logo from '../../assets/logo/hp-auriu.png';
 import styles from './Navigation.module.css';
 
 const Navigation = (props) => {
@@ -18,19 +19,20 @@ const Navigation = (props) => {
           {navigationItems.map((item, index, array) => {
             if (index === array.length - 1)
               return (
-                <Button primary to={item.route} key={index}>
+                <Button
+                  primary
+                  to={item.route}
+                  target={item.target}
+                  key={index}
+                >
                   {item.label}
                 </Button>
               );
             return (
               <li key={index} className={styles.item}>
-                <NavLink
-                  className={({ isActive }) => (isActive ? styles.active : '')}
-                  to={item.route}
-                  target={item.target}
-                >
+                <a href={item.route} target={item.target}>
                   {item.label}
-                </NavLink>
+                </a>
               </li>
             );
           })}
@@ -44,8 +46,9 @@ const Navigation = (props) => {
           className={styles['nav-open-button']}
           onClick={() => setShowMobileNav(!showMobileNav)}
         >
-          <Crown size={32} weight="fill" />
+          <List size={32} weight="fill" />
         </button>
+        <img src={logo} alt="" className={styles.logo} />
         <AnimatePresence>
           {showMobileNav && (
             <motion.div
@@ -65,20 +68,18 @@ const Navigation = (props) => {
                 {navigationItems.map((item, index, array) => {
                   if (index === array.length - 1)
                     return (
-                      <Button primary key={index}>
+                      <Button
+                        to={item.route}
+                        target={item.target}
+                        primary
+                        key={index}
+                      >
                         {item.label}
                       </Button>
                     );
                   return (
                     <li key={index} className={styles['mobile-item']}>
-                      <NavLink
-                        className={({ isActive }) =>
-                          isActive ? styles.active : ''
-                        }
-                        to={item.route}
-                      >
-                        {item.label}
-                      </NavLink>
+                      <a href={item.route}>{item.label}</a>
                     </li>
                   );
                 })}

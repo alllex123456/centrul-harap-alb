@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import ImageGallery from 'react-image-gallery';
 
+import SectionHeader from '../common/SectionHeader';
+
 import foto1 from '../../assets/activitati/poze - SET I/1679338707312.jpg';
 import foto2 from '../../assets/activitati/poze - SET I/1679338707482.jpg';
 import foto3 from '../../assets/activitati/poze - SET I/1679338707397.jpg';
@@ -19,61 +21,63 @@ const Gallery = () => {
     {
       original: foto1,
       thumbnail: foto1,
-      originalHeight: 900,
+      // originalHeight: 900,
     },
     {
       original: foto2,
       thumbnail: foto3,
-      originalHeight: 900,
+      // originalHeight: 900,
     },
     {
       original: foto3,
       thumbnail: foto3,
-      originalHeight: 900,
+      // originalHeight: 900,
     },
     {
       original: foto4,
       thumbnail: foto4,
-      originalHeight: 900,
+      // originalHeight: 900,
     },
     {
       original: foto5,
       thumbnail: foto5,
-      originalHeight: 900,
+      // originalHeight: 900,
     },
     {
       original: foto6,
       thumbnail: foto6,
-      originalHeight: 900,
+      // originalHeight: 900,
     },
     {
       original: foto7,
       thumbnail: foto7,
-      originalHeight: 900,
+      // originalHeight: 900,
     },
     {
       original: foto8,
       thumbnail: foto8,
-      originalHeight: 900,
+      // originalHeight: 900,
     },
     {
       original: foto9,
       thumbnail: foto9,
-      originalHeight: 900,
+      // originalHeight: 900,
     },
   ];
 
   return (
     <motion.div
+      id="galerie"
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      whileInView={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 2 }}
+      viewport={{ once: true }}
       className={styles.gallery}
     >
-      <h2 className="section-header">
+      <SectionHeader>
         <span className="display">A</span>ctivități în imagini
-      </h2>
+      </SectionHeader>
       <ImageGallery
         items={images}
         lazyLoad={true}

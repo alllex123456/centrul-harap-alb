@@ -6,7 +6,7 @@ import { X } from 'phosphor-react';
 
 const dropIn = {
   hidden: {
-    y: '-100vh',
+    y: '-50vh',
     opacity: 0,
   },
   visible: {
@@ -20,7 +20,7 @@ const dropIn = {
     },
   },
   exit: {
-    y: '100vh',
+    y: '50vh',
     opacity: 0,
   },
 };

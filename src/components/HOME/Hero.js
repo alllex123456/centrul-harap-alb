@@ -40,8 +40,11 @@ const Hero = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      whileInView={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className={styles.hero}
     >
       <PageTop>
         <div className={styles.content}>

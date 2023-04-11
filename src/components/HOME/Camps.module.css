@@ -1,9 +1,66 @@
 .camps {
-  padding: 5rem 0;
   max-width: var(--page-max-width);
   margin: var(--page-margin);
 }
 
-.images img {
-  height: 38rem;
+.content {
+  margin: var(--page-margin);
+  max-width: var(--page-max-width);
+  padding: 5rem 20rem;
+  background-image: url('../../assets/Parchment.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-text-dark);
+  font-size: var(--size-text-lg);
+
+  display: grid;
+  grid-gap: 8rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, min-content));
+  justify-content: center;
+}
+
+.content figure {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.camp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.image-container {
+  border-radius: var(--border-radius);
+  height: 20rem;
+  width: 20rem;
+  overflow: hidden;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s forwards;
+}
+
+.frame {
+  position: absolute;
+  height: 120%;
+  left: -2rem;
+  top: -2rem;
+  border-radius: var(--border-radius);
+}
+
+@media (max-width: 56.25em) {
+  .content {
+    padding: 10rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .content {
+    padding: 12rem 2rem;
+  }
 }

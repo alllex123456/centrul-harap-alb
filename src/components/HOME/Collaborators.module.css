@@ -11,7 +11,7 @@
 .content {
   margin: var(--page-margin);
   max-width: var(--page-max-width);
-  padding: 5rem 20rem;
+  padding: 12rem 20rem;
   background-image: url('../../assets/Parchment.svg');
   background-size: cover;
   background-position: center;
@@ -47,7 +47,7 @@
 .image {
   height: 100%;
   width: 100%;
-  transition: all 0.3s forwards;
+  transition: all 0.2s forwards;
 }
 
 .frame {
@@ -58,17 +58,20 @@
   border-radius: 40%;
 }
 
+.name {
+  text-align: center;
+}
+
 .button {
   position: absolute;
   bottom: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
 
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .content figure:hover .button {
@@ -79,4 +82,31 @@
 
 .content figure:hover .image {
   opacity: 0.5;
+}
+
+.modal-content {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.modal-content .image-container {
+  flex: 0 0 max-content;
+}
+
+.modal-text {
+  flex: 1 1 10rem;
+}
+
+@media (max-width: 50em) {
+  .content {
+    padding: 15rem 2rem;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .content {
+    padding: 20rem 2rem;
+  }
 }

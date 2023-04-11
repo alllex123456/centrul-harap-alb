@@ -3,3 +3,24 @@
   flex-direction: column;
   min-height: 100vh;
 }
+
+.arrow {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  height: 5rem;
+  width: 5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background: var(--color-green);
+  border: 5px solid var(--color-primary-main);
+
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow:hover {
+  filter: brightness(110%);
+}

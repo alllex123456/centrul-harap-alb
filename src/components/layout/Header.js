@@ -18,13 +18,20 @@ const Header = () => {
   }, []);
   return (
     <motion.header
+      id="top"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
       className={styles.header}
     >
-      {windowWidth > 1000 && <img className={styles.logo} src={logo} />}
+      {windowWidth > 1000 && (
+        <img
+          className={styles.logo}
+          src={logo}
+          alt="logo Centrul educational Harap Alb"
+        />
+      )}
       <Navigation windowWidth={windowWidth} />
     </motion.header>
   );

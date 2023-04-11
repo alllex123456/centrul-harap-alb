@@ -14,6 +14,7 @@ const Button = (props) => {
     return (
       <Link
         to={props.to}
+        target={props.target}
         className={`${props.className} ${styles.button} ${variant}`}
         onClick={props.onClick}
       >

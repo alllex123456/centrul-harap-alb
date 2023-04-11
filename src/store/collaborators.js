@@ -1,5 +1,5 @@
 import braica from '../assets/colaboratori/proful de sah - maestru international.jpg';
-import ardelean from '../assets/colaboratori/proful de limba engleza.jpg';
+import ardelean from '../assets/colaboratori/proful de sah - maestru international.jpg';
 import tarta from '../assets/colaboratori/profa de dezvoltare personala si consiliere parenting.jpeg';
 import gonea from '../assets/colaboratori/profa de educatie digitala.jpeg';
 import sencou from '../assets/colaboratori/profa de educatie digitala.jpeg';

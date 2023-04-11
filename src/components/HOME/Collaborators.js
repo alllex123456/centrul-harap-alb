@@ -3,10 +3,11 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 import { collaborators } from '../../store/collaborators';
 import Button from '../common/Button';
-
-import frame from '../../assets/flourish-frame-2.svg';
-import styles from './Collaborators.module.css';
 import Modal from '../common/Modal';
+import SectionHeader from '../common/SectionHeader';
+import frame from '../../assets/flourish-frame-2.svg';
+
+import styles from './Collaborators.module.css';
 
 const Collaborators = () => {
   const [openDetails, setOpenDetails] = useState({
@@ -20,9 +21,14 @@ const Collaborators = () => {
 
   const modalTitle = openDetails.content.name;
   const modalContent = (
-    <div>
-      <h6>{openDetails.content.title}</h6>
-      <p>info</p>
+    <div className={styles['modal-content']}>
+      <div className={styles['image-container']}>
+        <img className={styles.image} src={openDetails.content.photo} alt="" />
+      </div>
+      <div className={styles['modal-text']}>
+        <h6>{openDetails.content.title}</h6>
+        <p>info</p>
+      </div>
     </div>
   );
 
@@ -37,19 +43,20 @@ const Collaborators = () => {
           />
         )}
       </AnimatePresence>
-      <motion.div className={styles.collaborators}>
-        <h2 className="section-header">Colaboratorii noștri</h2>
+      <motion.div
+        id="colaboratori"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 2 }}
+        className={styles.collaborators}
+        viewport={{ once: true }}
+      >
+        <SectionHeader>Colaboratorii noștri</SectionHeader>
         <div className={styles.content}>
           {collaborators.map((collaborator, index) => (
             <div className={styles.collaborator} key={index}>
               <figure>
-                <Button
-                  primary
-                  className={styles.button}
-                  onClick={() => handleOpenDetails(collaborator)}
-                >
-                  Detalii
-                </Button>
                 <img className={styles.frame} src={frame} alt="" />
                 <div className={styles['image-container']}>
                   <img
@@ -57,6 +64,13 @@ const Collaborators = () => {
                     src={collaborator.photo}
                     alt=""
                   />
+                  <Button
+                    primary
+                    className={styles.button}
+                    onClick={() => handleOpenDetails(collaborator)}
+                  >
+                    Detalii
+                  </Button>
                 </div>
               </figure>
               <div className={styles.name}>

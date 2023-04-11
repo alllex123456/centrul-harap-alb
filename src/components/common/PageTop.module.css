@@ -1,5 +1,4 @@
 .top {
-  margin: 5rem 0;
   padding: 5rem 0;
   background: url('../../assets/hero.jpg'), var(--section-background-gradient);
   background-blend-mode: multiply;

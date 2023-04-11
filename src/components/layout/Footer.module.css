@@ -4,7 +4,7 @@
   padding: 2rem 0;
   min-height: 20rem;
   display: flex;
-  gap: 2rem;
+  gap: 6rem;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: auto;
@@ -15,17 +15,33 @@
   text-align: center;
 }
 
-.list-internal-links {
+.social {
   display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.list-header {
+  font-size: var(--size-text-xl);
+  margin-bottom: 2rem;
+}
+
+.list-links {
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
-.list-internal-links li:hover {
-  border-bottom: 2px solid var(--color-primary-main);
+.list-links li:hover {
+  text-decoration: underline;
+}
+
+.contact span {
+  font-weight: 700;
 }
 
 @media (max-width: 32em) {
-  .list-internal-links {
+  .list-links {
     flex-direction: column;
   }
 }
