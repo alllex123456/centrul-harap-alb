@@ -2,7 +2,7 @@ header {
   width: 100%;
   max-width: var(--page-max-width);
   margin: 0 auto;
-  padding-top: 2rem;
+  padding-top: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

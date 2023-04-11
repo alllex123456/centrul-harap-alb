@@ -73,13 +73,19 @@ const Navigation = (props) => {
                         target={item.target}
                         primary
                         key={index}
+                        onClick={() => setShowMobileNav(false)}
                       >
                         {item.label}
                       </Button>
                     );
                   return (
                     <li key={index} className={styles['mobile-item']}>
-                      <a href={item.route}>{item.label}</a>
+                      <a
+                        href={item.route}
+                        onClick={() => setShowMobileNav(false)}
+                      >
+                        {item.label}
+                      </a>
                     </li>
                   );
                 })}
