@@ -3,7 +3,7 @@
 }
 
 .content {
-  padding: 8rem 10rem;
+  padding: 8rem 16rem;
   margin: var(--page-margin);
   max-width: var(--page-max-width);
   color: var(--color-text-light);
