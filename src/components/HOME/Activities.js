@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import FramedImage from '../common/FramedImage';
+
 import SectionHeader from '../common/SectionHeader';
 import foto1 from '../../assets/activitati/poze - SET I/1679339449434.jpg';
 import foto2 from '../../assets/activitati/poze - SET I/1679338843975.jpg';
 import foto3 from '../../assets/activitati/poze - SET I/1679338708435.jpg';
-import frame from '../../assets/flourish-frame-2.svg';
-
 import styles from './Activities.module.css';
 
 const Activities = () => {
@@ -21,8 +21,7 @@ const Activities = () => {
       className={styles.activities}
     >
       <SectionHeader>
-        <span className="display">A</span>ctivitați ale Centrului Educațional
-        Harap Alb
+        Activitați ale Centrului Educațional Harap Alb
       </SectionHeader>
       <div className={styles.content}>
         <div className={styles.zigzag}>
@@ -33,17 +32,11 @@ const Activities = () => {
             tehnologii. Acestea sunt adresate grupelor de excelență la
             MATEMATICĂ.
           </p>
-          <figure>
-            <img className="image-frame" src={frame} alt="" />
-            <img src={foto1} alt="" />
-          </figure>
+          <FramedImage size="large" image={foto1} />
         </div>
 
         <div className={styles.zigzag}>
-          <figure>
-            <img className="image-frame" src={frame} alt="" />
-            <img src={foto2} alt="" />
-          </figure>
+          <FramedImage size="large" image={foto2} />
           <p>
             De la PET SCHOOL - lecții cu doctor veterinar, ateliere specifice,
             inclusiv sportive, și club de lectură cu recomandări de cărți, oră
@@ -66,10 +59,7 @@ const Activities = () => {
             <li>consiliere/parenting</li>
             <hr />
           </ul>
-          <figure>
-            <img className="image-frame" src={frame} alt="" />
-            <img src={foto3} alt="" />
-          </figure>
+          <FramedImage size="large" image={foto3} />
         </div>
       </div>
     </motion.div>

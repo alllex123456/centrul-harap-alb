@@ -1,12 +1,15 @@
+.contact {
+  padding: var(--section-padding);
+  margin: var(--section-margin);
+  background-color: rgba(234, 170, 105, 0.1);
+}
+
 .content {
-  padding: 6rem 16rem;
+  padding: 4rem;
+  border-radius: var(--border-radius);
   margin: var(--page-margin);
   max-width: var(--page-max-width);
-  color: var(--color-text-dark);
-  background: url('../../assets/old-paper.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: rgba(234, 170, 105, 0.2);
 
   display: flex;
   gap: 4rem;

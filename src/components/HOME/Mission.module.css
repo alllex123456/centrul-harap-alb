@@ -3,30 +3,28 @@
 }
 
 .content {
-  padding: 8rem 14rem;
   margin: var(--page-margin);
   max-width: var(--page-max-width);
-  color: var(--color-text-dark);
-  background: url('../../assets/Parchment.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.content h3 {
-  text-align: right;
+.content > div:first-child {
+  flex: 1 1 40rem;
+}
+.content > div:nth-child(2) {
+  flex: 1 1 60rem;
+}
+
+.text h3 {
   color: var(--color-primary-light);
   font-style: oblique;
   margin-bottom: 4rem;
 }
 
-.content p {
-  text-align: center;
+.text p {
   font-size: var(--size-text-lg);
-}
-
-@media (max-width: 50em) {
-  .content {
-    padding: 8rem 6rem;
-  }
 }

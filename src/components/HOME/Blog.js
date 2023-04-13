@@ -16,9 +16,8 @@ const Blog = () => {
       viewport={{ once: true }}
       className={styles.blog}
     >
-      <SectionHeader>
-        <span className="display">N</span>outăți de pe blog
-      </SectionHeader>
+      <SectionHeader>Noutăți de pe blog</SectionHeader>
+
       <div className={styles.content}>
         <Link to="/" target="_blank" className={styles.section}>
           <h6>Noutăți carte românească pentru copii &rarr;</h6>

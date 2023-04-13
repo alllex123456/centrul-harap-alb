@@ -1,0 +1,51 @@
+.image-container--large {
+  position: relative;
+  width: 40rem;
+  height: 40rem;
+}
+
+.image--large {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  object-fit: cover;
+  height: 34rem;
+  width: 34rem;
+  border-radius: 100%;
+}
+
+.frame--large {
+  stroke: var(--color-secondary-light);
+  stroke-width: 1rem;
+  fill: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40rem;
+}
+
+.image-container--medium {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+}
+
+.image--medium {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  object-fit: cover;
+  height: 22rem;
+  width: 22rem;
+  border-radius: 100%;
+}
+
+.frame--medium {
+  stroke: #eaaa69;
+  stroke-width: 1rem;
+  fill: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30rem;
+}

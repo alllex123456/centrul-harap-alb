@@ -10,11 +10,11 @@
   --color-green: #006600;
 
   --color-secondary-light: #eaaa69;
-  --color-secondary-main: #e59544;
+  --color-secondary-main: #e59443;
   --color-secondary-dark: #b77736;
 
   --color-text-light: #f0ebea;
-  --color-text-dark: #1d0d0c;
+  --color-text-dark: #402a29;
 
   --card-background: 'transparent';
 
@@ -29,7 +29,7 @@
   --size-text-xxl: 2.6rem;
 
   --page-max-width: 130rem;
-  --page-margin: 2rem auto;
+  --page-margin: 0 auto;
 
   --transition: all 0.2s;
   --border-radius: 4px;
@@ -40,6 +40,7 @@
   );
 
   --section-padding: 5rem 0;
+  --section-margin: 5rem 0;
 }
 
 @media (max-width: 40em) {
@@ -62,13 +63,9 @@ html {
 
 body {
   font-family: var(--font-primary);
-  background-color: var(--color-green);
-  /* background-image: url('./assets/flourish-frame-1.svg');
-  background-image: url('./assets/flourish-pattern-1.svg'); */
-  background-image: url('./assets/flourish-pattern-2.svg');
-  background-blend-mode: multiply;
-  color: var(--color-text-light);
+  color: var(--color-text-dark);
   font-size: var(--size-text-md);
+  background-color: #f0f0f0;
 }
 
 h1 {
@@ -156,10 +153,6 @@ textarea:focus {
 
 hr {
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
-}
-
-img {
-  border-radius: 5px;
 }
 
 /* HELPERS */

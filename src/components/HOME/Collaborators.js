@@ -5,9 +5,10 @@ import { collaborators } from '../../store/collaborators';
 import Button from '../common/Button';
 import Modal from '../common/Modal';
 import SectionHeader from '../common/SectionHeader';
-import frame from '../../assets/flourish-frame-2.svg';
+import FramedImage from '../common/FramedImage';
 
 import styles from './Collaborators.module.css';
+import { Info } from 'phosphor-react';
 
 const Collaborators = () => {
   const [openDetails, setOpenDetails] = useState({
@@ -22,9 +23,7 @@ const Collaborators = () => {
   const modalTitle = openDetails.content.name;
   const modalContent = (
     <div className={styles['modal-content']}>
-      <div className={styles['image-container']}>
-        <img className={styles.image} src={openDetails.content.photo} alt="" />
-      </div>
+      <FramedImage size="medium" image={openDetails.content.photo} />
       <div className={styles['modal-text']}>
         <h6>{openDetails.content.title}</h6>
         <p>info</p>
@@ -56,27 +55,19 @@ const Collaborators = () => {
         <div className={styles.content}>
           {collaborators.map((collaborator, index) => (
             <div className={styles.collaborator} key={index}>
-              <figure>
-                <img className={styles.frame} src={frame} alt="" />
-                <div className={styles['image-container']}>
-                  <img
-                    className={styles.image}
-                    src={collaborator.photo}
-                    alt=""
-                  />
-                  <Button
-                    primary
-                    className={styles.button}
-                    onClick={() => handleOpenDetails(collaborator)}
-                  >
-                    Detalii
-                  </Button>
-                </div>
-              </figure>
+              <FramedImage size="medium" image={collaborator.photo} />
+
               <div className={styles.name}>
                 <h6>{collaborator.name}</h6>
                 <p>{collaborator.title}</p>
               </div>
+              <Button
+                primary
+                className={styles.button}
+                onClick={() => handleOpenDetails(collaborator)}
+              >
+                <Info size="large" />
+              </Button>
             </div>
           ))}
         </div>

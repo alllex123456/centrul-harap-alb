@@ -12,15 +12,15 @@
   width: 5rem;
   padding: 1rem;
   border-radius: 50%;
-  background: var(--color-green);
-  border: 5px solid var(--color-primary-main);
+  border: 3px solid var(--color-primary-main);
 
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s;
 }
 
 .arrow:hover {
-  filter: brightness(110%);
+  scale: 1.1;
 }

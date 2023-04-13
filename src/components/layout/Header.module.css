@@ -1,13 +1,32 @@
 header {
   width: 100%;
-  max-width: var(--page-max-width);
-  margin: 0 auto;
-  padding-top: 4rem;
+  min-height: 7rem;
+  padding: 2rem 25%;
+  margin: var(--page-margin);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  background-color: var(--color-primary-main);
+  color: var(--color-text-light);
+  border-bottom: 5px solid rgba(229, 148, 67, 0.5);
 }
 
 .logo {
+  margin-right: 2rem;
   height: 10rem;
+}
+
+.contact {
+  padding-right: 2rem;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }

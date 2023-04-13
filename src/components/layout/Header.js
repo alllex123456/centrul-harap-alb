@@ -5,6 +5,7 @@ import Navigation from './Navigation';
 
 import logo from '../../assets/logo/hp-auriu.png';
 import styles from './Header.module.css';
+import { Envelope, Phone } from 'phosphor-react';
 
 const Header = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -26,11 +27,23 @@ const Header = () => {
       className={styles.header}
     >
       {windowWidth > 1000 && (
-        <img
-          className={styles.logo}
-          src={logo}
-          alt="logo Centrul educational Harap Alb"
-        />
+        <>
+          <img
+            className={styles.logo}
+            src={logo}
+            alt="logo Centrul educational Harap Alb"
+          />
+          <div className={styles.contact}>
+            <div>
+              <Envelope />
+              office@office
+            </div>
+            <div>
+              <Phone />
+              123456
+            </div>
+          </div>
+        </>
       )}
       <Navigation windowWidth={windowWidth} />
     </motion.header>

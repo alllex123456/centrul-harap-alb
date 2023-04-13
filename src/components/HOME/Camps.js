@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Button from '../common/Button';
 import SectionHeader from '../common/SectionHeader';
 import { camps } from '../../store/camps';
-import frame from '../../assets/flourish-frame-2.svg';
+import FramedImage from '../common/FramedImage';
 
 import styles from './Camps.module.css';
 
@@ -19,9 +19,7 @@ const Camps = () => {
       viewport={{ once: true }}
       className={styles.camps}
     >
-      <SectionHeader>
-        <span className="display">T</span>abere {new Date().getFullYear()}
-      </SectionHeader>
+      <SectionHeader>Tabere 2023</SectionHeader>
       <div className={styles.content}>
         {camps.map((camp, index) => (
           <div className={styles.camp} key={index}>
@@ -30,12 +28,8 @@ const Camps = () => {
               <span>{camp.startDate.toLocaleDateString('ro')}</span> -{' '}
               <span>{camp.endDate.toLocaleDateString('ro')}</span>
             </div>
-            <figure>
-              <img className={styles.frame} src={frame} alt="" />
-              <div className={styles['image-container']}>
-                <img className={styles.image} src={camp.image} alt="" />
-              </div>
-            </figure>
+            <FramedImage size="medium" image={camp.image} />
+
             <Button secondary to={camp.route} target="_blank">
               Rezervă loc
             </Button>

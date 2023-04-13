@@ -1,26 +1,16 @@
 .collaborators {
   padding: var(--section-padding);
-  /* background: url('../../assets/flourish-frame-1.svg'),
-    var(--section-background-gradient);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: multiply; */
+  margin: var(--section-margin);
 }
 
 .content {
   margin: var(--page-margin);
   max-width: var(--page-max-width);
-  padding: 12rem 20rem;
-  background-image: url('../../assets/Parchment.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: var(--color-text-dark);
   font-size: var(--size-text-lg);
 
   display: grid;
-  grid-gap: 8rem;
+  grid-gap: 14rem;
   grid-template-columns: repeat(auto-fit, minmax(20rem, min-content));
   justify-content: center;
 }
@@ -28,34 +18,9 @@
 .collaborator {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
-}
-
-.content figure {
-  position: relative;
-}
-
-.image-container {
-  border-radius: 40%;
-  height: 20rem;
-  width: 20rem;
-  overflow: hidden;
-}
-
-.image {
-  height: 100%;
-  width: 100%;
-  transition: all 0.2s forwards;
-}
-
-.frame {
-  position: absolute;
-  height: 120%;
-  left: -2rem;
-  top: -2rem;
-  border-radius: 40%;
 }
 
 .name {
@@ -63,25 +28,13 @@
 }
 
 .button {
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transition: all 0.2s;
-}
-
-.content figure:hover .button {
-  opacity: 1;
-  pointer-events: all;
-  visibility: visible;
-}
-
-.content figure:hover .image {
-  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
 }
 
 .modal-content {
@@ -97,16 +50,4 @@
 
 .modal-text {
   flex: 1 1 10rem;
-}
-
-@media (max-width: 50em) {
-  .content {
-    padding: 15rem 2rem;
-  }
-}
-
-@media (max-width: 31.25em) {
-  .content {
-    padding: 20rem 2rem;
-  }
 }

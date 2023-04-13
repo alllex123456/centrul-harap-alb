@@ -1,5 +1,10 @@
 .summercamps {
   padding: var(--section-padding);
+  background-color: rgba(234, 170, 105, 0.1);
+}
+
+.content h6 {
+  margin: 4rem;
 }
 
 .subtitle {
@@ -8,17 +13,12 @@
   font-size: var(--size-text-xl);
   font-weight: 700;
   text-align: center;
-  margin: 4rem 0;
+  margin: 3rem 0;
 }
 
 .content {
   margin: var(--page-margin);
   max-width: var(--page-max-width);
-  padding: 10rem 20rem;
-  background-image: url('../../assets/Parchment.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: var(--color-text-dark);
   font-size: var(--size-text-lg);
 }

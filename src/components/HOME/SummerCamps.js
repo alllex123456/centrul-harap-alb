@@ -17,9 +17,7 @@ const SummerCamps = () => {
       viewport={{ once: true }}
       className={styles.summercamps}
     >
-      <SectionHeader>
-        <span className="display">A</span>ctivități în taberele de vară
-      </SectionHeader>
+      <SectionHeader>Activități în taberele de vară</SectionHeader>
       <div className={styles.content}>
         <h6>Obiectivul Centrului Educațional Harap Alb:</h6>
         <p className={styles.subtitle}>Crearea unui concept nou în EDUCAȚIE</p>

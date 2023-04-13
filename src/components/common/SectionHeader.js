@@ -9,9 +9,10 @@ const SectionHeader = (props) => {
       initial={{ x: '-10rem' }}
       whileInView={{ x: 0 }}
       transition={{ duration: 0.5 }}
-      className={styles.header}
+      className={`${styles.header} ${props.className}`}
     >
-      {props.children}
+      <span className="display">{props.children.slice(0, 1)}</span>
+      {props.children.slice(1)}
     </motion.h2>
   );
 };

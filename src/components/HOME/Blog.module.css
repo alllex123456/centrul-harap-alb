@@ -1,15 +1,12 @@
 .blog {
+  position: relative;
   padding: var(--section-padding);
+  background-color: rgba(234, 170, 105, 0.1);
 }
 
 .content {
   margin: var(--page-margin);
   max-width: var(--page-max-width);
-  padding: 5rem 20rem;
-  background-image: url('../../assets/Parchment.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: var(--color-text-dark);
   font-size: var(--size-text-lg);
 }
@@ -21,10 +18,4 @@
 
 .section:hover {
   color: var(--color-primary-light);
-}
-
-@media (max-width: 44em) {
-  .content {
-    padding: 5rem 10rem;
-  }
 }
